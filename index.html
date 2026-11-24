@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cris Cakes | Bolos e Brigadeiros em Aparecida e Goiânia</title>
+  <meta name="description" content="Confeitaria artesanal em Aparecida de Goiânia (Rua 10, nº 269, Bairro Cardoso Continuação, CEP 74934-080) atendendo Goiânia e região. Bolos decorados, brigadeiros e doces finos.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cris-cakes-ruby.vercel.app/">
+  <meta name="theme-color" content="#FFFBF9">
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Cris Cakes">
+  <meta property="og:title" content="Cris Cakes | Bolos e Brigadeiros em Aparecida e Goiânia">
+  <meta property="og:description" content="Bolos de aniversário, brigadeiros, doces finos e bolos caseiros feitos com amor. Retirada no Bairro Cardoso Continuação (Rua 10, nº 269) ou entrega em Goiânia, Aparecida de Goiânia e região.">
+  <meta property="og:url" content="https://cris-cakes-ruby.vercel.app/">
+  <meta property="og:image" content="https://cris-cakes-ruby.vercel.app/assets/img/hero-bolo-flores-chantilly.webp">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cris Cakes | Bolos e Brigadeiros em Aparecida e Goiânia">
+  <meta name="twitter:description" content="Bolos decorados, brigadeiros, doces finos e bolos no pote em Aparecida de Goiânia e Goiânia. Encomende pelo WhatsApp (62) 99201-5896.">
+  <meta name="twitter:image" content="https://cris-cakes-ruby.vercel.app/assets/img/hero-bolo-flores-chantilly.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/img/logo-cris-cakes.webp">
+  <link rel="apple-touch-icon" href="assets/img/logo-cris-cakes.webp">
+
+  <!-- Preload imagem principal (LCP rápido no celular) -->
+  <link rel="preload" as="image" href="assets/img/hero-bolo-flores-chantilly.webp" type="image/webp">
+
+  <!-- Tipografia leve e legível -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Dados Estruturados Schema.org: Bakery (Confeitaria Local) + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Bakery",
+        "@id": "https://cris-cakes-ruby.vercel.app/#bakery",
+        "name": "Cris Cakes",
+        "alternateName": "Cris Cakes Brigaderia e Confeitaria Artesanal",
+        "description": "Bolo de aniversário, brigadeiros, doces finos e bolos no pote. Confeitaria artesanal feita com amor em Aparecida de Goiânia, atendendo Goiânia, Aparecida de Goiânia e região com retirada no endereço e entrega.",
+        "url": "https://cris-cakes-ruby.vercel.app/",
+        "telephone": "+55-62-99201-5896",
+        "priceRange": "$$",
+        "image": [
+          "https://cris-cakes-ruby.vercel.app/assets/img/hero-bolo-flores-chantilly.webp",
+          "https://cris-cakes-ruby.vercel.app/assets/img/bolo-minimalista-flores-rosa.webp",
+          "https://cris-cakes-ruby.vercel.app/assets/img/bolo-rosa-alstroemerias.webp",
+          "https://cris-cakes-ruby.vercel.app/assets/img/brigadeiros-e-bolo-festa.webp"
+        ],
+        "logo": "https://cris-cakes-ruby.vercel.app/assets/img/logo-cris-cakes.webp",
+        "sameAs": [
+          "https://www.instagram.com/criscakesb/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua 10, nº 269, Qd. 12, Lt. 1, Casa 3, Bairro Cardoso Continuação",
+          "addressLocality": "Aparecida de Goiânia",
+          "addressRegion": "GO",
+          "postalCode": "74934-080",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -16.7663732,
+          "longitude": -49.321342
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Aparecida de Goiânia"
+          },
+          {
+            "@type": "City",
+            "name": "Goiânia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Região Metropolitana de Goiânia"
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ],
+        "servesCuisine": "Confeitaria Artesanal, Bolos Decorados, Brigadeiros",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Cardápio Cris Cakes",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Bolos decorados de aniversário e comemorações"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Doces finos e brigadeiros artesanais"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Bolos no pote e bolos caseiros"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cris-cakes-ruby.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Com quanta antecedência devo encomendar meu bolo ou brigadeiros?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para bolos decorados e encomendas de festa, o ideal é pedir com 3 a 5 dias de antecedência para garantir sua vaga na agenda. Se precisar de algo para mais perto ou de um bolinho para hoje, chame no WhatsApp (62) 99201-5896 para consultar a disponibilidade."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A Cris Cakes trabalha com entrega ou retirada no endereço?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trabalhamos com os dois: você pode retirar sua encomenda direto no nosso endereço no Bairro Cardoso Continuação, em Aparecida de Goiânia (Rua 10, nº 269, Qd. 12, Lt. 1, Casa 3, CEP 74.934-080), ou solicitar entrega para Goiânia, Aparecida de Goiânia e região."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso personalizar as cores, flores e o tema do bolo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Cada bolo é feito sob medida para a sua comemoração: modelos com flores, estilo vintage com pérolas, espatulados com dourado ou temas infantis e personalizados com topo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais regiões vocês atendem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atendemos Goiânia, Aparecida de Goiânia e região, além de retirada presencial no Bairro Cardoso Continuação (Rua 10, nº 269, CEP 74.934-080) em Aparecida de Goiânia."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo principal</a>
+
+  <!-- CABEÇALHO FIXO -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Cris Cakes, voltar ao início">
+        <img src="assets/img/logo-cris-cakes.webp" alt="Logo Cris Cakes Brigaderia e Confeitaria Artesanal em Aparecida de Goiânia" width="76" height="76" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name" translate="no">Cris Cakes</span>
+          <span class="brand-tag">Confeitaria artesanal com amor</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="nav-menu" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#como-encomendar">Como encomendar</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#regioes">Regiões</a></li>
+          <li><a href="#onde-estamos">Onde estamos</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li>
+            <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" class="ig-inline-link" translate="no">
+              <svg class="icon-ig-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              <span>@criscakesb</span>
+            </a>
+          </li>
+        </ul>
+        <a
+          href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20gostaria%20de%20fazer%20uma%20encomenda."
+          class="btn btn-whatsapp btn-sm header-cta"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+          <span>Pedir no WhatsApp</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. INÍCIO (HERO) -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">Confeitaria artesanal em Aparecida de Goiânia e Goiânia</p>
+          <h1>Bolos de aniversário, brigadeiros e doces feitos com amor para a sua comemoração</h1>
+          <p class="hero-lead">
+            Na <strong translate="no">Cris Cakes</strong> (<a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" translate="no">@criscakesb</a>), cada bolo e cada bandeja de brigadeiros saem fresquinhos da nossa cozinha na Rua 10, nº 269, Bairro Cardoso Continuação, para adoçar aniversários, encontros em família ou aquele <em>“bolinho pra mim”</em>.
+          </p>
+
+          <ul class="hero-facts" aria-label="Informações rápidas de atendimento">
+            <li>Retirada no Bairro Cardoso Continuação (Rua 10, nº 269, Aparecida de Goiânia) ou entrega em Goiânia, Aparecida e região.</li>
+            <li>Bolos feitos sob encomenda com flores, pérolas, chantininho ou o tema da sua festa.</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a
+              href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20quero%20fazer%20um%20or%C3%A7amento%20de%20encomenda."
+              class="btn btn-whatsapp btn-lg"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+              <span>Encomendar pelo WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-lg">
+              <svg class="icon-ig" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              <span>Ver Instagram <span translate="no">@criscakesb</span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-photo-main">
+            <img
+              src="assets/img/hero-bolo-flores-chantilly.webp"
+              alt="Bolo decorado em Aparecida de Goiânia e Goiânia com chantilly branco texturizado e flores mosquitinho coral feito pela Cris Cakes"
+              width="640"
+              height="640"
+              fetchpriority="high">
+          </div>
+          <div class="hero-photo-grid">
+            <img
+              src="assets/img/bolo-minimalista-flores-rosa.webp"
+              alt="Bolo de aniversário artesanal em Goiânia com cobertura lisa branca e flores cor-de-rosa delicadas"
+              width="320"
+              height="320">
+            <img
+              src="assets/img/bolo-rosa-alstroemerias.webp"
+              alt="Bolo decorado rosa pastel com flores brancas naturais em Aparecida de Goiânia"
+              width="320"
+              height="320">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PRODUTOS -->
+    <section class="section section-light" id="produtos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Bolos e doces sob encomenda para a sua festa</h2>
+          <p>Escolha o produto desejado e toque no botão para abrir o WhatsApp da Cris com a mensagem preenchida.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Produto 1: Bolos decorados -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img
+                src="assets/img/bolo-rosa-alstroemerias.webp"
+                alt="Bolo decorado em Goiânia e Aparecida de Goiânia com chantininho rosa e flores naturais brancas"
+                width="640"
+                height="640"
+                loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Bolos decorados e de aniversário</h3>
+              <p>
+                Bolos feitos sob medida com massa leve, recheio cremoso e cobertura em chantininho. Fazemos modelos florais, estilo <em>vintage</em> com pérolas, espatulados com dourado e temas infantis ou adultos.
+              </p>
+              <ul class="product-highlights">
+                <li>Decoração nas cores e no tema da sua comemoração</li>
+                <li>Tamanhos para reuniões em casa ou festas maiores</li>
+                <li>Acabamento com flores, pérolas, rosas em creme ou topo personalizado</li>
+              </ul>
+              <a
+                href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20gostaria%20de%20encomendar%20um%20Bolo%20Decorado%20para%20anivers%C3%A1rio%2Fcomemora%C3%A7%C3%A3o."
+                class="btn btn-whatsapp btn-block"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+                <span>Pedir bolo decorado no WhatsApp</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Produto 2: Doces finos e brigadeiros -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img
+                src="assets/img/brigadeiros-e-bolo-festa.webp"
+                alt="Brigadeiros artesanais e bolo de aniversário decorado em Aparecida de Goiânia e Goiânia"
+                width="640"
+                height="640"
+                loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Doces finos e brigadeiros</h3>
+              <p>
+                Brigadeiros cremosos enrolados à mão, doces de chocolate para presentear e bandejas montadas para acompanhar o bolo na mesa da festa.
+              </p>
+              <ul class="product-highlights">
+                <li>Brigadeiros tradicionais e especiais preparados no dia</li>
+                <li>Caixas para presente e kits combinados com o bolo</li>
+                <li>Centos e meios-centos sob encomenda para eventos</li>
+              </ul>
+              <a
+                href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20gostaria%20de%20encomendar%20Doces%20Finos%20e%20Brigadeiros."
+                class="btn btn-whatsapp btn-block"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+                <span>Pedir brigadeiros e doces no WhatsApp</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Produto 3: Bolos no pote e caseiros -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img
+                src="assets/img/bolo-minimalista-flores-rosa.webp"
+                alt="Bolo caseiro e bolinho artesanal em Aparecida de Goiânia para café da tarde e comemorações"
+                width="640"
+                height="640"
+                loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3>Bolos no pote e bolos caseiros</h3>
+              <p>
+                Para o café da tarde, para entregar de lembrança ou para pedir aquele <em>“bolinho pra mim”</em>, com camadas de massa artesanal e recheio feito na hora.
+              </p>
+              <ul class="product-highlights">
+                <li>Bolos no pote individuais bem recheados</li>
+                <li>Bolos caseiros e mini bolos para o dia a dia</li>
+                <li>Opção prática para sobremesa em família e lembrancinhas</li>
+              </ul>
+              <a
+                href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20quero%20saber%20os%20sabores%20de%20Bolo%20no%20Pote%20e%20Bolos%20Caseiros."
+                class="btn btn-whatsapp btn-block"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+                <span>Pedir bolo no pote ou caseiro</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Estilos em destaque -->
+        <div class="styles-strip">
+          <div class="style-mini">
+            <img src="assets/img/bolo-vintage-rosas-vermelhas.webp" alt="Bolo vintage Lambeth branco com rosas vermelhas em Goiânia" width="120" height="120" loading="lazy">
+            <div>
+              <h4>Vintage e rosas</h4>
+              <p>Trabalho clássico de bico, pérolas e rosas em creme.</p>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20dos%20bolos%20estilo%20Vintage%20com%20rosas%20e%20p%C3%A9rolas%20no%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="link-wa">Orçar este estilo &rarr;</a>
+            </div>
+          </div>
+          <div class="style-mini">
+            <img src="assets/img/bolo-champagne-ouro.webp" alt="Bolo decorado dourado e champagne em Aparecida de Goiânia" width="120" height="120" loading="lazy">
+            <div>
+              <h4>Clássico e dourado</h4>
+              <p>Textura espatulada com faixa dourada para bodas e aniversários.</p>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20espatulado%20com%20dourado%20no%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="link-wa">Orçar este estilo &rarr;</a>
+            </div>
+          </div>
+          <div class="style-mini">
+            <img src="assets/img/bolo-infantil-tematico.webp" alt="Bolo infantil temático personalizado em Aparecida de Goiânia" width="120" height="120" loading="lazy">
+            <div>
+              <h4>Temático e infantil</h4>
+              <p>Cores vibrantes e topo personalizado com o tema favorito.</p>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Quero%20encomendar%20um%20Bolo%20Tem%C3%A1tico%20personalizado." target="_blank" rel="noopener noreferrer" class="link-wa">Orçar este estilo &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMO ENCOMENDAR -->
+    <section class="section section-blush" id="como-encomendar">
+      <div class="container">
+        <div class="section-header">
+          <h2>Como fazer sua encomenda na Cris Cakes</h2>
+          <p>Você combina todos os detalhes direto com a Cris pelo WhatsApp em poucos minutos.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">1</span>
+            <h3>Escolha o produto ou modelo</h3>
+            <p>Veja as fotos da nossa galeria abaixo ou no Instagram <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" translate="no">@criscakesb</a> e separe sua referência.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">2</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Informe a data da comemoração, para quantas pessoas é o bolo e quais sabores você prefere.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">3</span>
+            <h3>Combine retirada ou entrega</h3>
+            <p>Escolha retirar no Bairro Cardoso Continuação (Rua 10, nº 269, Aparecida de Goiânia) ou receber em Goiânia, Aparecida e região.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">4</span>
+            <h3>Receba fresquinho no dia</h3>
+            <p>Seu bolo e seus brigadeiros são preparados artesanalmente perto do horário combinado.</p>
+          </div>
+        </div>
+
+        <div class="section-cta">
+          <a
+            href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Quero%20consultar%20disponibilidade%20de%20data%20para%20uma%20encomenda."
+            class="btn btn-whatsapp btn-lg"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+            <span>Consultar agenda no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. GALERIA (FOTOS REAIS EM ORDEM DE DESTAQUE) -->
+    <section class="section section-light" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <h2>Galeria de bolos e doces mais curtidos no <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" translate="no">@criscakesb</a></h2>
+          <p>Todas as fotos são de encomendas reais publicadas no nosso perfil do Instagram. Toque em <strong>“Quero um assim”</strong> para enviar o modelo escolhido no WhatsApp.</p>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Filtrar fotos por estilo">
+          <button class="filter-btn active" type="button" data-filter="todos" aria-pressed="true">Todos (12)</button>
+          <button class="filter-btn" type="button" data-filter="floral" aria-pressed="false">Florais e clássicos</button>
+          <button class="filter-btn" type="button" data-filter="vintage" aria-pressed="false">Vintage e pérolas</button>
+          <button class="filter-btn" type="button" data-filter="tematico" aria-pressed="false">Temáticos e brigadeiros</button>
+        </div>
+
+        <p id="gallery-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></p>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- 1. 21 curtidas -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-img-box">
+              <img src="assets/img/hero-bolo-flores-chantilly.webp" alt="Bolo decorado em Goiânia com chantilly branco em ondas verticais e flores mosquitinho coral" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Chantilly branco e mosquitinho coral</strong>
+                <span>Ondas verticais e arranjo floral delicado</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Amei%20o%20bolo%20branco%20com%20flores%20mosquitinho%20coral%20do%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 2. 16 curtidas -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-minimalista-flores-rosa.webp" alt="Bolo de aniversário minimalista branco com flores cor-de-rosa em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Clássico branco com flores cor-de-rosa</strong>
+                <span>“Um bolinho pra mim”, leve e romântico</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20branco%20minimalista%20com%20flores%20cor-de-rosa%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 3. 14 curtidas (Vintage rosas vermelhas) -->
+          <figure class="gallery-item" data-category="vintage">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-vintage-rosas-vermelhas.webp" alt="Bolo vintage branco com rosas vermelhas de creme e arabescos em Goiânia" width="361" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Vintage branco com rosas vermelhas</strong>
+                <span>Bico clássico Lambeth e rosas em creme</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20Vintage%20branco%20com%20rosas%20vermelhas%20do%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 4. 14 curtidas (Lilás e dourado) -->
+          <figure class="gallery-item" data-category="tematico">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-lilas-dourado.webp" alt="Bolo decorado lilás com sol dourado e pérolas de açúcar em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Lilás pastel e sol dourado</strong>
+                <span>Cobertura lisa com pérolas comestíveis</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20lil%C3%A1s%20com%20dourado%20e%20p%C3%A9rolas%20no%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 5. 13 curtidas (Vintage pérolas rosa) -->
+          <figure class="gallery-item" data-category="vintage">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-vintage-perolas-rosa.webp" alt="Bolo decorado rosa vintage com cordões de pérolas em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Vintage rosa com pérolas</strong>
+                <span>Drapeado em tons de rosa e marfim</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20Vintage%20rosa%20com%20p%C3%A9rolas%20do%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 6. 12 curtidas (Rosa alstroemérias) -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-rosa-alstroemerias.webp" alt="Bolo rosa pastel com flores brancas alstroemérias e rosetas na base em Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Rosa blush e flores brancas</strong>
+                <span>Base em rosetas e flores naturais no topo</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20rosa%20com%20flores%20brancas%20no%20topo%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 7. 12 curtidas (Azul texturizado) -->
+          <figure class="gallery-item" data-category="tematico">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-azul-texturizado.webp" alt="Bolo de aniversário azul espatulado com base texturizada em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Azul texturizado e base rústica</strong>
+                <span>Para aniversários adultos e temáticos</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20azul%20texturizado%20do%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 8. 11 curtidas (Champagne e ouro) -->
+          <figure class="gallery-item" data-category="floral">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-champagne-ouro.webp" alt="Bolo decorado marfim champagne com faixa dourada metálica em Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Marfim champagne e onda dourada</strong>
+                <span>Textura espatulada para bodas e aniversários</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20marfim%20com%20faixa%20dourada%20do%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 9. 11 curtidas (Brigadeiros + Bolo) -->
+          <figure class="gallery-item" data-category="tematico">
+            <div class="gallery-img-box">
+              <img src="assets/img/brigadeiros-e-bolo-festa.webp" alt="Bandejas de brigadeiros artesanais de chocolate e bolo personalizado em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Combo festa: bolo e brigadeiros</strong>
+                <span>Bolo personalizado com bandejas de brigadeiro</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Quero%20or%C3%A7ar%20um%20combo%20de%20Bolo%20Personalizado%20mais%20Brigadeiros%20para%20festa." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 10. 9 curtidas (Espatulado confetes) -->
+          <figure class="gallery-item" data-category="vintage">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-espatulado-confetes.webp" alt="Bolo branco espatulado com confetes coloridos em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Branco espatulado e confetes</strong>
+                <span>Colorido e leve para festas em casa</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20branco%20espatulado%20com%20confetes%20coloridos%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 11. 8 curtidas (Infantil Gamer/Roblox) -->
+          <figure class="gallery-item" data-category="tematico">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-infantil-tematico.webp" alt="Bolo infantil azul marinho tema games e Roblox em Goiânia e Aparecida" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Infantil temático games</strong>
+                <span>Com nome, idade e tema escolhido pela criança</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Quero%20encomendar%20um%20bolo%20infantil%20tem%C3%A1tico%20como%20o%20do%20site." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+
+          <!-- 12. 8 curtidas (Tricolor espatulado) -->
+          <figure class="gallery-item" data-category="tematico">
+            <div class="gallery-img-box">
+              <img src="assets/img/bolo-tricolor-espatulado.webp" alt="Bolo espatulado tricolor azul, amarelo dourado e marrom em Aparecida de Goiânia" width="640" height="640" loading="lazy">
+            </div>
+            <figcaption class="gallery-caption">
+              <div>
+                <strong>Espatulado em três cores</strong>
+                <span>Faixas horizontais na paleta do seu evento</span>
+              </div>
+              <a href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostei%20do%20bolo%20espatulado%20tricolor%20no%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-gallery-wa">Quero um assim</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="section-cta">
+          <a
+            href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20a%20galeria%20do%20site%20da%20Cris%20Cakes%20e%20quero%20enviar%20uma%20foto%20de%20inspira%C3%A7%C3%A3o%20para%20or%C3%A7amento."
+            class="btn btn-whatsapp btn-lg"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+            <span>Mandar minha inspiração no WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram btn-lg">
+            <svg class="icon-ig" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <span>Ver perfil completo no Instagram <span translate="no">@criscakesb</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. REGIÕES ATENDIDAS -->
+    <section class="section section-blush" id="regioes">
+      <div class="container">
+        <div class="section-header">
+          <h2>Regiões atendidas: Goiânia, Aparecida de Goiânia e região</h2>
+          <p>Trabalhamos tanto com retirada no nosso endereço quanto com entrega combinada para a sua casa, salão de festas ou empresa.</p>
+        </div>
+
+        <div class="regions-grid">
+          <div class="region-card">
+            <h3>Aparecida de Goiânia</h3>
+            <p>Saímos do <strong>Bairro Cardoso Continuação (Rua 10, nº 269, CEP 74.934-080)</strong> e atendemos Cardoso I e II, Cardoso Continuação, Cidade Vera Cruz, Garavelo, Buriti Sereno, Jardim Helvécia, Vila Brasília, Cruzeiro do Sul, Centro de Aparecida e demais setores da cidade.</p>
+          </div>
+          <div class="region-card">
+            <h3>Goiânia</h3>
+            <p>Entregas combinadas para Parque Amazônia, Jardim América, Setor Bueno, Marista, Oeste, Sul, Sudoeste, Bela Vista, Pedro Ludovico, Jardim Goiás, Campinas e outros bairros de Goiânia.</p>
+          </div>
+          <div class="region-card">
+            <h3>Retirada ou entrega</h3>
+            <p>Você escolhe o que for mais prático: retirar pessoalmente na Rua 10, nº 269 (Bairro Cardoso Continuação) no horário marcado ou solicitar entrega programada.</p>
+          </div>
+        </div>
+
+        <div class="section-cta">
+          <a
+            href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostaria%20de%20consultar%20a%20entrega%20da%20Cris%20Cakes%20para%20o%20meu%20bairro."
+            class="btn btn-whatsapp btn-lg"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+            <span>Consultar entrega para meu bairro</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ONDE ESTAMOS (COM ENDEREÇO COMPLETO Nº 269, MAPA E BOTÃO COMO CHEGAR) -->
+    <section class="section section-light" id="onde-estamos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Onde estamos</h2>
+          <p>Retirada de encomendas com horário agendado e entregas saindo de Aparecida de Goiânia para toda Goiânia e região.</p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-card">
+            <h3 translate="no">Cris Cakes</h3>
+            <dl class="location-list">
+              <div>
+                <dt>Endereço para retirada</dt>
+                <dd>Rua 10, nº 269, Qd. 12, Lt. 1, Casa 3, Bairro Cardoso Continuação, Aparecida de Goiânia - GO, CEP 74.934-080</dd>
+              </div>
+              <div>
+                <dt>Bairros e cidades atendidos</dt>
+                <dd>goiania, aparecida de goiania e regiao</dd>
+              </div>
+              <div>
+                <dt>Modalidades de atendimento</dt>
+                <dd>Retirada no endereço e entrega</dd>
+              </div>
+              <div>
+                <dt>Horário de atendimento</dt>
+                <dd>Segunda a sábado, das 8h às 18h (com agendamento pelo WhatsApp)</dd>
+              </div>
+              <div>
+                <dt>WhatsApp</dt>
+                <dd><a href="https://wa.me/5562992015896" target="_blank" rel="noopener noreferrer">(62) 99201-5896</a></dd>
+              </div>
+              <div>
+                <dt>Instagram</dt>
+                <dd>
+                  <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" class="ig-inline-link" translate="no">
+                    <svg class="icon-ig-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    <span>@criscakesb</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="location-actions">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Rua+10,+269+-+Bairro+Cardoso+Continua%C3%A7%C3%A3o,+Aparecida+de+Goi%C3%A2nia+-+GO,+74934-080"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span>Como chegar (abrir rota)</span>
+              </a>
+              <a
+                href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Gostaria%20de%20combinar%20a%20retirada%20ou%20entrega%20de%20uma%20encomenda%20na%20Cris%20Cakes."
+                class="btn btn-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+                <span>Falar no WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="map-frame-wrap">
+            <iframe
+              title="Mapa de localização da Cris Cakes na Rua 10, nº 269, Bairro Cardoso Continuação, Aparecida de Goiânia - GO, CEP 74.934-080"
+              src="https://www.google.com/maps?q=Rua+10,+269+-+Bairro+Cardoso+Continua%C3%A7%C3%A3o,+Aparecida+de+Goi%C3%A2nia+-+GO,+74934-080&ll=-16.7663732,-49.321342&z=16&output=embed"
+              width="600"
+              height="450"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DÚVIDAS FREQUENTES (FAQ) -->
+    <section class="section section-blush" id="duvidas">
+      <div class="container faq-container">
+        <div class="section-header">
+          <h2>Dúvidas frequentes</h2>
+          <p>Respostas diretas para quem encomenda bolos e doces com a gente em Aparecida de Goiânia e Goiânia.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Com quanta antecedência devo fazer minha encomenda?</summary>
+            <p>Para bolos decorados e doces de festa, recomendamos pedir com <strong>3 a 5 dias de antecedência</strong> para reservar sua data com calma. Se precisar de algo para mais perto ou para o fim de semana, chame no WhatsApp para conferirmos o encaixe na agenda.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Vocês fazem entrega em Goiânia e Aparecida ou só retirada?</summary>
+            <p>Fazemos <strong>os dois</strong>. Você pode retirar pessoalmente no nosso endereço no Bairro Cardoso Continuação (<code>Rua 10, nº 269, Qd. 12, Lt. 1, Casa 3, Bairro Cardoso Continuação, Aparecida de Goiânia - GO, CEP 74.934-080</code>) ou pedir entrega programada para Goiânia, Aparecida de Goiânia e região.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Posso escolher o modelo, as cores e os sabores do bolo?</summary>
+            <p>Sim. Você pode escolher qualquer modelo da nossa galeria ou do perfil <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" translate="no">@criscakesb</a> no Instagram, ou mandar uma foto de inspiração pelo WhatsApp para montarmos nas suas cores e no sabor que sua família prefere.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Como escolher o tamanho ideal do bolo e a quantidade de brigadeiros?</summary>
+            <p>Basta informar para quantas pessoas será a comemoração quando chamar no WhatsApp. A Cris indica o tamanho do bolo e a quantidade de brigadeiros adequada para o seu número de convidados.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quais são as formas de pagamento?</summary>
+            <p>Aceitamos Pix e combinamos os detalhes de reserva da encomenda diretamente pelo WhatsApp no momento do seu pedido.</p>
+          </details>
+        </div>
+
+        <div class="section-cta">
+          <a
+            href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Tenho%20uma%20d%C3%BAvida%20sobre%20encomenda%20de%20bolos%20e%20doces."
+            class="btn btn-whatsapp btn-lg"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+            <span>Tirar dúvida direto com a Cris</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CHAMADA FINAL -->
+    <section class="cta-final" id="encomendar">
+      <div class="container cta-final-inner">
+        <div class="cta-final-copy">
+          <h2>Encomende seu bolo e seus brigadeiros pelo WhatsApp</h2>
+          <p>Conte a data da sua festa e receba um orçamento para bolo decorado, doces finos, brigadeiros ou bolos no pote com retirada no Bairro Cardoso Continuação (Rua 10, nº 269) ou entrega em Goiânia e Aparecida.</p>
+          <div class="cta-final-buttons">
+            <a
+              href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20quero%20fazer%20minha%20encomenda."
+              class="btn btn-whatsapp btn-lg"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+              <span>Fazer encomenda: (62) 99201-5896</span>
+            </a>
+            <a
+              href="https://www.instagram.com/criscakesb/"
+              class="btn btn-instagram btn-lg"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="icon-ig" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              <span>Seguir <span translate="no">@criscakesb</span> no Instagram</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-final-img">
+          <img src="assets/img/bolo-vintage-perolas-rosa.webp" alt="Bolo artesanal rosa com pérolas feito pela Cris Cakes em Aparecida de Goiânia" width="420" height="420" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ COMPLETO COM LOGO E ENDEREÇO -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img src="assets/img/logo-cris-cakes.webp" alt="Logo Cris Cakes Brigaderia no rodapé" width="88" height="88" class="brand-logo footer-logo" loading="lazy">
+          <div class="brand-text">
+            <span class="brand-name" translate="no">Cris Cakes</span>
+            <span class="brand-tag">Bolo de aniversário • Brigadeiros • Confeitaria com amor</span>
+          </div>
+        </a>
+        <p class="footer-bio">
+          Confeitaria artesanal em Aparecida de Goiânia atendendo Goiânia, Aparecida de Goiânia e região com bolos decorados, doces finos, brigadeiros e bolos no pote.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contato e endereço</h3>
+        <ul class="footer-list">
+          <li>WhatsApp: <a href="https://wa.me/5562992015896" target="_blank" rel="noopener noreferrer">(62) 99201-5896 (62992015896)</a></li>
+          <li>Instagram: <a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" class="ig-inline-link" translate="no"><svg class="icon-ig-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg><span>@criscakesb</span></a></li>
+          <li>Endereço: Rua 10, nº 269, Qd. 12, Lt. 1, Casa 3, Bairro Cardoso Continuação, Aparecida de Goiânia - GO, CEP 74.934-080</li>
+          <li>Atendimento: retirada no endereço e entrega (segunda a sábado, 8h às 18h)</li>
+          <li>Regiões: goiania, aparecida de goiania e regiao</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos e orçamentos</a></li>
+          <li><a href="#como-encomendar">Como encomendar</a></li>
+          <li><a href="#galeria">Galeria de fotos</a></li>
+          <li><a href="#regioes">Regiões atendidas</a></li>
+          <li><a href="#onde-estamos">Onde estamos e mapa</a></li>
+          <li><a href="#duvidas">Dúvidas frequentes</a></li>
+          <li><a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer">Instagram <span translate="no">@criscakesb</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 <span translate="no">Cris Cakes</span> (<a href="https://www.instagram.com/criscakesb/" target="_blank" rel="noopener noreferrer" translate="no">@criscakesb</a>). Confeitaria artesanal em Aparecida de Goiânia e Goiânia.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a
+    href="https://wa.me/5562992015896?text=Ol%C3%A1%2C%20Cris!%20Vi%20o%20site%20da%20Cris%20Cakes%20e%20gostaria%20de%20fazer%20uma%20encomenda."
+    class="floating-wa"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Cris Cakes pelo WhatsApp">
+    <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.82 14.01c-.25.7-1.45 1.34-2.01 1.43-.52.08-1.18.12-1.91-.12-.44-.14-1.01-.33-1.74-.65-3.07-1.33-5.08-4.43-5.23-4.64-.15-.21-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.39.81-.39.2 0 .41.01.59.01.19.01.44-.07.69.53.25.6.86 2.09.93 2.24.08.15.13.33.03.53-.1.21-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.31.31-.13.61.18.31.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.46 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.75-.17 1.45z"/></svg>
+    <span class="floating-wa-text">Encomendar</span>
+  </a>
+
+  <script src="script.js" defer></script>
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
