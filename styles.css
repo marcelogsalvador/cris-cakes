@@ -74,6 +74,11 @@ a {
   transition: color 0.16s ease, background-color 0.16s ease, transform 0.16s ease;
 }
 
+p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 a:focus,
 button:focus,
 summary:focus {
@@ -1024,8 +1029,18 @@ h3 {
 .footer-bottom {
   padding-top: 22px;
   text-align: center;
-  color: #A8928F;
+  color: #D8C7C4;
   font-size: 0.85rem;
+}
+
+.footer-bottom a {
+  color: var(--logo-pink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-bottom a:hover {
+  color: #FFFFFF;
 }
 
 /* BOTÃO FLUTUANTE WHATSAPP (com suporte a safe-area-inset-bottom) */
