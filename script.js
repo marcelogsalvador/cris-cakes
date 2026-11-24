@@ -84,4 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {
   if (initialFilter && ["todos", "floral", "vintage", "tematico"].includes(initialFilter)) {
     applyFilter(initialFilter, false, false);
   }
+
+  // 3. Conversão Google Ads em cliques no WhatsApp (todos os botões wa.me)
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach((waLink) => {
+    waLink.addEventListener("click", () => {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "conversion", {
+          send_to: "AW-18592602842/aj_6CI6Gpr4dENq10qFF",
+          value: 1.0,
+          currency: "BRL",
+        });
+      }
+    });
+  });
 });
