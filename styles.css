@@ -74,7 +74,8 @@ a {
   transition: color 0.16s ease, background-color 0.16s ease, transform 0.16s ease;
 }
 
-p a {
+p a,
+h2 a {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
