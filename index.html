@@ -49,11 +49,22 @@
     gtag('config', 'AW-18592602842');
   </script>
 
-  <!-- Dados Estruturados Schema.org: Bakery (Confeitaria Local) + FAQPage -->
+  <!-- Dados Estruturados Schema.org: WebSite (Site Name) + Bakery (Confeitaria Local) + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cris-cakes-ruby.vercel.app/#website",
+        "name": "Cris Cakes",
+        "alternateName": ["Cris Cakes Confeitaria", "Cris Cakes Brigaderia"],
+        "url": "https://cris-cakes-ruby.vercel.app/",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://cris-cakes-ruby.vercel.app/#bakery"
+        }
+      },
       {
         "@type": "Bakery",
         "@id": "https://cris-cakes-ruby.vercel.app/#bakery",
